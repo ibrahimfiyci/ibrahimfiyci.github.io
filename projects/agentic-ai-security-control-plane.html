@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agentic AI Security Control Plane | James Fiyci</title>
+    <meta
+      name="description"
+      content="James Fiyci project case study for an agentic AI security control plane with tool-use guardrails, approvals, audit logs, and MITRE ATLAS-inspired threat mapping."
+    />
+    <link rel="canonical" href="https://ibrahimfiyci.github.io/projects/agentic-ai-security-control-plane.html" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Agentic AI Security Control Plane | James Fiyci" />
+    <meta property="og:description" content="Project case study on securing autonomous AI agents with least privilege, approvals, audit logs, and policy checks." />
+    <meta property="og:url" content="https://ibrahimfiyci.github.io/projects/agentic-ai-security-control-plane.html" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <a class="brand" href="/">James Fiyci</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Links</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <header class="project-hero">
+          <p class="kicker">Technical Project</p>
+          <h1>Agentic AI Security Control Plane &amp; Tool-Use Guardrails</h1>
+          <p class="lead">
+            A defensive architecture for AI agents that can call tools, retrieve
+            data, or act across enterprise workflows.
+          </p>
+        </header>
+        <section class="project-summary" aria-label="Project summary">
+          <div class="summary-card">
+            <h2>Project Overview</h2>
+            <p>
+              This project defines a control plane for safer agentic AI
+              adoption. It focuses on least-privilege tool access, approval
+              workflows for high-impact actions, immutable audit events, and
+              policy decisions before an agent can execute external operations.
+            </p>
+          </div>
+          <aside class="summary-card">
+            <h2>Technologies</h2>
+            <ul>
+              <li>Python and FastAPI</li>
+              <li>OPA-style policy checks</li>
+              <li>MITRE ATLAS mapping</li>
+              <li>Structured audit logs</li>
+              <li>Sandboxed tool adapters</li>
+            </ul>
+          </aside>
+        </section>
+        <div class="case-study">
+          <h2>Why it matters</h2>
+          <p>
+            Agentic AI systems can make decisions and take actions with less
+            human oversight than traditional chatbots. That creates value, but
+            also raises risk around excessive privilege, unsafe automation,
+            weak auditability, and unclear accountability.
+          </p>
+          <h2>Security design</h2>
+          <p>
+            The control plane treats every tool call as a security decision. It
+            records the agent goal, user intent, tool requested, data scope,
+            policy result, and whether human approval is required before action.
+          </p>
+          <h2>Study notes</h2>
+          <p>
+            This project demonstrates practical thinking about AI governance,
+            security architecture, threat modeling, and detection-friendly
+            logging for teams bringing AI agents into production.
+          </p>
+          <h2>References</h2>
+          <ul>
+            <li><a href="https://www.cisa.gov/resources-tools/resources/careful-adoption-agentic-ai-services">CISA: Careful Adoption of Agentic AI Services</a></li>
+            <li><a href="https://atlas.mitre.org/">MITRE ATLAS</a></li>
+          </ul>
+        </div>
+      </article>
+    </main>
+    <footer><p>&copy; 2026 James Fiyci.</p></footer>
+  </body>
+</html>
