@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enterprise LLM Security Gateway & Prompt Firewall | James Fiyci</title>
+    <meta
+      name="description"
+      content="James Fiyci built an enterprise LLM security gateway and prompt firewall proxy using Python, FastAPI, Microsoft Presidio, FAISS, Docker, and Pydantic."
+    />
+    <link
+      rel="canonical"
+      href="https://ibrahimfiyci.github.io/projects/enterprise-llm-security-gateway-prompt-firewall.html"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Enterprise LLM Security Gateway & Prompt Firewall | James Fiyci"
+    />
+    <meta
+      property="og:description"
+      content="A project case study on prompt-injection mitigation, DLP, semantic vector similarity checks, and OWASP LLM controls."
+    />
+    <meta
+      property="og:url"
+      content="https://ibrahimfiyci.github.io/projects/enterprise-llm-security-gateway-prompt-firewall.html"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "Enterprise LLM Security Gateway & Prompt Firewall Proxy",
+        "author": {
+          "@type": "Person",
+          "name": "James Fiyci",
+          "url": "https://ibrahimfiyci.github.io/"
+        },
+        "programmingLanguage": "Python",
+        "runtimePlatform": ["FastAPI", "Docker"],
+        "keywords": [
+          "AI security",
+          "LLM firewall",
+          "prompt injection",
+          "OWASP LLM01",
+          "OWASP LLM06",
+          "Microsoft Presidio",
+          "FAISS"
+        ],
+        "description": "FastAPI LLM security gateway and prompt firewall proxy for inline traffic inspection, semantic prompt-injection checks, DLP redaction, and OWASP LLM risk mitigation."
+      }
+    </script>
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <a class="brand" href="/">James Fiyci</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Links</a>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <header class="project-hero">
+          <p class="kicker">Technical Project</p>
+          <h1>Enterprise LLM Security Gateway &amp; Prompt Firewall Proxy</h1>
+          <p class="lead">
+            A FastAPI-based inline proxy for inspecting LLM requests and
+            responses, reducing prompt-injection risk, and enforcing data-loss
+            prevention controls.
+          </p>
+        </header>
+
+        <section class="project-summary" aria-label="Project summary">
+          <div class="summary-card">
+            <h2>Project Overview</h2>
+            <p>
+              This project implements a security gateway between applications
+              and LLM providers. The proxy inspects requests and responses,
+              applies prompt firewall logic, checks semantic similarity against
+              known attack patterns, and redacts sensitive output before it
+              reaches users or downstream systems.
+            </p>
+          </div>
+          <aside class="summary-card">
+            <h2>Technologies</h2>
+            <ul>
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>Microsoft Presidio</li>
+              <li>FAISS vector database</li>
+              <li>Docker</li>
+              <li>Pydantic</li>
+            </ul>
+          </aside>
+        </section>
+
+        <div class="case-study">
+          <h2>Prompt firewall design</h2>
+          <p>
+            The proxy is designed to sit inline with AI application traffic. It
+            can evaluate incoming prompts before they reach a model and inspect
+            generated responses before they leave the AI layer. This pattern
+            gives development teams a central place to apply security policy
+            instead of scattering checks across many applications.
+          </p>
+
+          <h2>OWASP LLM risk coverage</h2>
+          <p>
+            The gateway focuses on practical controls for OWASP LLM01 prompt
+            injection and OWASP LLM06 sensitive information disclosure. It uses
+            semantic similarity checks to identify prompt-injection patterns and
+            Microsoft Presidio to detect and redact PII, API keys, and sensitive
+            source-code-like content in outbound responses.
+          </p>
+
+          <h2>Enterprise integration</h2>
+          <p>
+            The architecture is containerized with Docker so it can be deployed
+            near existing services in an enterprise software development
+            lifecycle. Pydantic models define request and response contracts,
+            while FastAPI provides a low-friction interface for internal
+            application teams.
+          </p>
+
+          <h2>Why this matters</h2>
+          <p>
+            AI systems often move quickly from prototype to production. A
+            security gateway gives teams a way to monitor AI traffic, apply
+            repeatable controls, and reduce sensitive data exposure while they
+            continue improving the application itself.
+          </p>
+
+          <h2>Search terms this project demonstrates</h2>
+          <ul>
+            <li>Enterprise LLM security gateway</li>
+            <li>Prompt firewall proxy</li>
+            <li>OWASP LLM01 prompt injection mitigation</li>
+            <li>OWASP LLM06 sensitive information disclosure</li>
+            <li>Microsoft Presidio DLP for AI applications</li>
+          </ul>
+
+          <h2>Repository</h2>
+          <p>
+            Public GitHub repository link coming soon. After the repository is
+            published, this page should link directly to the project source code
+            and README.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 James Fiyci.</p>
+    </footer>
+  </body>
+</html>
