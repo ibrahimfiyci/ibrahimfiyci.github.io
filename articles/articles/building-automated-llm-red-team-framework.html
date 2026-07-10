@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Building an Automated LLM Red-Team Framework | James Fiyci</title>
+    <meta
+      name="description"
+      content="James Fiyci explains the design of an automated LLM red-team framework for black-box AI safety testing, prompt injection validation, and markdown risk reporting."
+    />
+    <link
+      rel="canonical"
+      href="https://ibrahimfiyci.github.io/articles/building-automated-llm-red-team-framework.html"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Building an Automated LLM Red-Team Framework | James Fiyci"
+    />
+    <meta
+      property="og:description"
+      content="A blog-style walkthrough of automated black-box LLM red-team testing and defensive reporting."
+    />
+    <meta
+      property="og:url"
+      content="https://ibrahimfiyci.github.io/articles/building-automated-llm-red-team-framework.html"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Building an Automated LLM Red-Team Framework",
+        "author": {
+          "@type": "Person",
+          "name": "James Fiyci",
+          "url": "https://ibrahimfiyci.github.io/"
+        },
+        "datePublished": "2026-07-10",
+        "dateModified": "2026-07-10",
+        "mainEntityOfPage": "https://ibrahimfiyci.github.io/articles/building-automated-llm-red-team-framework.html",
+        "keywords": "LLM red teaming, AI security, prompt injection, jailbreak testing, LangChain, Ollama, Claude 3.5 Sonnet",
+        "description": "A blog-style walkthrough of automated black-box LLM red-team testing and defensive reporting."
+      }
+    </script>
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <a class="brand" href="/">James Fiyci</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Links</a>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <header class="article-hero">
+          <p class="kicker">AI Security Blog</p>
+          <h1>Building an Automated LLM Red-Team Framework</h1>
+          <p class="article-meta">By James Fiyci | Updated July 10, 2026</p>
+        </header>
+
+        <div class="article-body">
+          <p>
+            Manual LLM red teaming is useful, but it can be difficult to repeat.
+            An automated red-team framework makes testing more consistent by
+            defining test cases, target models, scoring rules, and report output
+            in one workflow.
+          </p>
+
+          <h2>The problem</h2>
+          <p>
+            AI systems can behave differently across model versions, prompts,
+            tools, and retrieval contexts. A single manual test does not show
+            whether a guardrail is reliable. The framework was designed to run
+            controlled black-box tests repeatedly so that safety behavior can be
+            compared across targets such as hosted APIs and local models.
+          </p>
+
+          <h2>The architecture</h2>
+          <p>
+            The system uses Python to coordinate test execution, LangChain to
+            organize model interactions, hosted API access for Claude 3.5
+            Sonnet, and Ollama for local Llama 3 testing. Each test case is
+            treated as an evaluation unit with input, expected security
+            behavior, scoring criteria, and report output.
+          </p>
+
+          <h2>Defensive evaluation focus</h2>
+          <p>
+            The framework focuses on whether a target model follows the intended
+            security boundary when exposed to hostile or confusing instructions.
+            It can support validation areas such as indirect prompt injection,
+            agentic goal hijacking, unsafe tool-use requests, and responses that
+            indicate guardrail bypass.
+          </p>
+
+          <h2>Reporting</h2>
+          <p>
+            The output is designed for review. Markdown reports summarize the
+            test run, observed behavior, bypass indicators, and recommended
+            follow-up work. That makes the results easier to share in a project
+            README, security review, portfolio, or learning notebook.
+          </p>
+
+          <h2>Takeaway</h2>
+          <p>
+            Good AI security testing is not just about finding one dramatic
+            failure. It is about building a repeatable process that helps teams
+            measure behavior, compare controls, and improve model-facing
+            applications over time.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 James Fiyci.</p>
+    </footer>
+  </body>
+</html>
