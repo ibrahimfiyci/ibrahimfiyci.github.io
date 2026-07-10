@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Understanding Prompt Injection | James Fiyci</title>
+    <meta
+      name="description"
+      content="A practical explanation of prompt injection by James Fiyci, including how attackers manipulate instructions in AI and LLM applications."
+    />
+    <link rel="canonical" href="https://ibrahimfiyci.github.io/articles/prompt-injection.html" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Understanding Prompt Injection | James Fiyci" />
+    <meta
+      property="og:description"
+      content="How attackers manipulate instructions in AI systems and what builders can do about it."
+    />
+    <meta property="og:url" content="https://ibrahimfiyci.github.io/articles/prompt-injection.html" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Understanding Prompt Injection",
+        "author": {
+          "@type": "Person",
+          "name": "James Fiyci",
+          "url": "https://ibrahimfiyci.github.io/"
+        },
+        "datePublished": "2026-07-10",
+        "dateModified": "2026-07-10",
+        "mainEntityOfPage": "https://ibrahimfiyci.github.io/articles/prompt-injection.html",
+        "description": "A practical explanation of prompt injection by James Fiyci, including how attackers manipulate instructions in AI and LLM applications."
+      }
+    </script>
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <a class="brand" href="/">James Fiyci</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Links</a>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <header class="article-hero">
+          <p class="kicker">AI Security Notes</p>
+          <h1>Understanding Prompt Injection</h1>
+          <p class="article-meta">By James Fiyci | Updated July 10, 2026</p>
+        </header>
+
+        <div class="article-body">
+          <p>
+            Prompt injection is a security problem where untrusted text causes an
+            AI system to follow instructions that the developer or user did not
+            intend. It matters because language models treat many kinds of text
+            as instructions, even when that text came from a webpage, document,
+            email, support ticket, or attacker-controlled input.
+          </p>
+
+          <h2>Direct and indirect injection</h2>
+          <p>
+            Direct prompt injection happens when a user enters malicious
+            instructions into the AI system. Indirect prompt injection happens
+            when the AI reads outside content that contains hidden or hostile
+            instructions. Indirect injection is especially important for AI
+            assistants that browse websites, summarize files, or use retrieval
+            augmented generation.
+          </p>
+
+          <h2>Why it is hard</h2>
+          <p>
+            Traditional software can separate code from data more strictly. LLM
+            applications often mix developer instructions, user requests,
+            retrieved documents, and tool results inside one context. The model
+            then has to decide what to trust, which is not the same as a security
+            boundary.
+          </p>
+
+          <h2>Safer design patterns</h2>
+          <ul>
+            <li>Do not give the model broad access to sensitive data or powerful tools.</li>
+            <li>Use allowlists for tool actions and require confirmation for risky operations.</li>
+            <li>Label untrusted content clearly and keep it separate from system instructions.</li>
+            <li>Validate outputs before using them in code, commands, emails, or API calls.</li>
+            <li>Log model decisions and test with adversarial examples.</li>
+          </ul>
+
+          <h2>Bottom line</h2>
+          <p>
+            Prompt injection is not solved by one clever prompt. It requires
+            secure application design: least privilege, data boundaries,
+            verification, monitoring, and careful control over what actions an AI
+            system can take.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 James Fiyci.</p>
+    </footer>
+  </body>
+</html>
