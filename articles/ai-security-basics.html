@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Security Basics | James Fiyci</title>
+    <meta
+      name="description"
+      content="A short introduction to AI security by James Fiyci, covering data exposure, prompt injection, tool use, and secure AI application design."
+    />
+    <link rel="canonical" href="https://ibrahimfiyci.github.io/articles/ai-security-basics.html" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AI Security Basics | James Fiyci" />
+    <meta
+      property="og:description"
+      content="A short introduction to AI security, LLM risks, and practical safeguards."
+    />
+    <meta property="og:url" content="https://ibrahimfiyci.github.io/articles/ai-security-basics.html" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "AI Security Basics",
+        "author": {
+          "@type": "Person",
+          "name": "James Fiyci",
+          "url": "https://ibrahimfiyci.github.io/"
+        },
+        "datePublished": "2026-07-10",
+        "dateModified": "2026-07-10",
+        "mainEntityOfPage": "https://ibrahimfiyci.github.io/articles/ai-security-basics.html",
+        "description": "A short introduction to AI security by James Fiyci, covering data exposure, prompt injection, tool use, and secure AI application design."
+      }
+    </script>
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <a class="brand" href="/">James Fiyci</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Links</a>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <header class="article-hero">
+          <p class="kicker">AI Security Notes</p>
+          <h1>AI Security Basics</h1>
+          <p class="article-meta">By James Fiyci | Updated July 10, 2026</p>
+        </header>
+
+        <div class="article-body">
+          <p>
+            AI security is the practice of protecting AI-enabled systems from
+            misuse, data leakage, unsafe automation, model manipulation, and
+            failures that can harm users or organizations. It combines familiar
+            cybersecurity fundamentals with new risks introduced by language
+            models, agents, retrieval systems, and automated tools.
+          </p>
+
+          <h2>Why AI security matters</h2>
+          <p>
+            Modern AI systems often process sensitive text, connect to internal
+            documents, call APIs, write code, or summarize private information.
+            When these systems are designed without security boundaries, a model
+            can expose data, follow malicious instructions, or take actions that
+            a normal application would block.
+          </p>
+
+          <h2>Common risk areas</h2>
+          <ul>
+            <li>Prompt injection that tricks a model into ignoring trusted instructions.</li>
+            <li>Data leakage through logs, chat history, retrieval results, or generated answers.</li>
+            <li>Unsafe tool access where an AI agent can send email, change files, or call APIs too broadly.</li>
+            <li>Overtrust in generated output without verification, review, or source checking.</li>
+            <li>Weak monitoring that misses abuse, unexpected behavior, or policy violations.</li>
+          </ul>
+
+          <h2>Practical safeguards</h2>
+          <p>
+            Secure AI applications should use least-privilege tool access,
+            strong authentication, scoped data retrieval, input and output
+            validation, human review for high-impact actions, and clear audit
+            logs. AI systems should be tested with realistic adversarial
+            examples before they are trusted in production workflows.
+          </p>
+
+          <h2>Simple starting point</h2>
+          <p>
+            Treat the model as one component in a larger system. The model can
+            help reason and generate language, but the application should still
+            enforce permissions, validate actions, protect secrets, and decide
+            what data the model is allowed to see.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 James Fiyci.</p>
+    </footer>
+  </body>
+</html>
