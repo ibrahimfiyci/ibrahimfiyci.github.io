@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Where AI Security Meets Cloud Security Architecture | James Fiyci</title>
+    <meta
+      name="description"
+      content="James Fiyci study note on the overlap between AI security, cloud security architecture, identity, logging, RAG systems, agentic AI, and model supply chain risk."
+    />
+    <link rel="canonical" href="https://ibrahimfiyci.github.io/articles/ai-security-cloud-security-overlap.html" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Where AI Security Meets Cloud Security Architecture | James Fiyci" />
+    <meta property="og:url" content="https://ibrahimfiyci.github.io/articles/ai-security-cloud-security-overlap.html" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <a class="brand" href="/">James Fiyci</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Links</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <header class="article-hero">
+          <p class="kicker">AI Security Blog</p>
+          <h1>Where AI Security Meets Cloud Security Architecture</h1>
+          <p class="article-meta">By James Fiyci | Updated July 13, 2026</p>
+        </header>
+        <div class="article-body">
+          <p>
+            AI security is not separate from cloud security. Most AI systems
+            still rely on cloud identity, storage, networking, logs, containers,
+            serverless workloads, APIs, and third-party integrations.
+          </p>
+          <h2>Identity and tool access</h2>
+          <p>
+            Agentic AI systems can call tools, retrieve data, and trigger
+            workflows. Cloud security patterns like least privilege, scoped
+            service roles, approval gates, and audit logs become AI safety
+            controls.
+          </p>
+          <h2>RAG and data exposure</h2>
+          <p>
+            Retrieval-Augmented Generation systems need careful access design.
+            The model should not become a shortcut around data classification,
+            tenant boundaries, or sensitive document permissions.
+          </p>
+          <h2>Model supply chain</h2>
+          <p>
+            Models, datasets, prompts, embeddings, packages, and vendor APIs
+            all become dependencies. AI bill of materials thinking helps make
+            those dependencies visible for security review.
+          </p>
+          <h2>Monitoring</h2>
+          <p>
+            AI application logs should explain prompts, retrieved context,
+            policy decisions, tool calls, approvals, and outputs without
+            exposing sensitive data unnecessarily.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer><p>&copy; 2026 James Fiyci.</p></footer>
+  </body>
+</html>
