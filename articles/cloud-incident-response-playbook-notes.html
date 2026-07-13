@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cloud Incident Response Playbook Notes | James Fiyci</title>
+    <meta
+      name="description"
+      content="James Fiyci study note on cloud incident response, AWS triage, evidence logging, Boto3 enrichment, containment decisions, and recovery validation."
+    />
+    <link rel="canonical" href="https://ibrahimfiyci.github.io/articles/cloud-incident-response-playbook-notes.html" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Cloud Incident Response Playbook Notes | James Fiyci" />
+    <meta property="og:url" content="https://ibrahimfiyci.github.io/articles/cloud-incident-response-playbook-notes.html" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <a class="brand" href="/">James Fiyci</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Links</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <header class="article-hero">
+          <p class="kicker">Incident Response Blog</p>
+          <h1>Cloud Incident Response Playbook Notes</h1>
+          <p class="article-meta">By James Fiyci | Updated July 13, 2026</p>
+        </header>
+        <div class="article-body">
+          <p>
+            Cloud incident response needs speed, but it also needs evidence.
+            A good playbook tells the responder what to collect, what to
+            preserve, what to contain, and what to communicate.
+          </p>
+          <h2>Evidence first</h2>
+          <p>
+            Response notes should capture timestamps, identities, API actions,
+            affected resources, network context, alert sources, and enrichment
+            results. Without evidence, containment decisions become difficult
+            to defend later.
+          </p>
+          <h2>Containment with review</h2>
+          <p>
+            Some cloud actions are safe to automate as preparation, such as
+            enrichment and report generation. High-impact changes, including
+            disabling access or changing network rules, should be designed with
+            review gates in production workflows.
+          </p>
+          <h2>Recovery validation</h2>
+          <p>
+            The playbook should include checks for restored access, corrected
+            permissions, monitored recurrence, and lessons learned that improve
+            detections and architecture.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer><p>&copy; 2026 James Fiyci.</p></footer>
+  </body>
+</html>
