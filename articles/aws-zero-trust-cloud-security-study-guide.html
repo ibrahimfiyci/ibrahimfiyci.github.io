@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AWS Zero Trust Cloud Security Study Guide | James Fiyci</title>
+    <meta
+      name="description"
+      content="James Fiyci study note on AWS Zero Trust cloud security, IAM, KMS, VPC segmentation, CloudTrail, GuardDuty, Security Hub, and resilient architecture."
+    />
+    <link rel="canonical" href="https://ibrahimfiyci.github.io/articles/aws-zero-trust-cloud-security-study-guide.html" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AWS Zero Trust Cloud Security Study Guide | James Fiyci" />
+    <meta property="og:url" content="https://ibrahimfiyci.github.io/articles/aws-zero-trust-cloud-security-study-guide.html" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <a class="brand" href="/">James Fiyci</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Links</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <header class="article-hero">
+          <p class="kicker">Cloud Security Blog</p>
+          <h1>AWS Zero Trust Cloud Security Study Guide</h1>
+          <p class="article-meta">By James Fiyci | Updated July 13, 2026</p>
+        </header>
+        <div class="article-body">
+          <p>
+            Zero Trust in AWS is not a single product. It is a design habit:
+            verify identity, limit access, segment paths, encrypt data, monitor
+            continuously, and make risky actions reviewable.
+          </p>
+          <h2>Identity first</h2>
+          <p>
+            IAM policy design should start with least privilege, separation of
+            duties, short-lived credentials, and explicit service boundaries.
+            Broad roles and shared credentials make cloud incidents harder to
+            contain.
+          </p>
+          <h2>Network segmentation</h2>
+          <p>
+            VPC design, security groups, private subnets, route controls, and
+            workload isolation reduce blast radius. The goal is to make
+            movement between services intentional and observable.
+          </p>
+          <h2>Encryption and key management</h2>
+          <p>
+            KMS policies should match data sensitivity and operational needs.
+            Encryption is stronger when key access, service roles, audit logs,
+            and rotation expectations are documented together.
+          </p>
+          <h2>Visibility</h2>
+          <p>
+            CloudTrail, CloudWatch, GuardDuty, Security Hub, WAF logs, and VPC
+            Flow Logs give defenders the evidence needed to detect abuse,
+            investigate changes, and improve architecture.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer><p>&copy; 2026 James Fiyci.</p></footer>
+  </body>
+</html>
