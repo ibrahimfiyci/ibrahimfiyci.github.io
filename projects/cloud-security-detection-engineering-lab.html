@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cloud Security Detection Engineering Lab | James Fiyci</title>
+    <meta
+      name="description"
+      content="James Fiyci project case study for cloud security detection engineering with Splunk, AWS logs, WAF, EDR telemetry, MITRE ATT&CK mapping, and alert triage."
+    />
+    <link rel="canonical" href="https://ibrahimfiyci.github.io/projects/cloud-security-detection-engineering-lab.html" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Cloud Security Detection Engineering Lab | James Fiyci" />
+    <meta property="og:description" content="Project case study on cloud detections, SIEM content, telemetry quality, and analyst review." />
+    <meta property="og:url" content="https://ibrahimfiyci.github.io/projects/cloud-security-detection-engineering-lab.html" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <a class="brand" href="/">James Fiyci</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Links</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <header class="project-hero">
+          <p class="kicker">Technical Project</p>
+          <h1>Cloud Security Detection Engineering Lab</h1>
+          <p class="lead">
+            A SIEM-focused lab for building detections from AWS, WAF, endpoint,
+            DNS, and network telemetry while reducing noisy alerts.
+          </p>
+        </header>
+        <section class="project-summary" aria-label="Project summary">
+          <div class="summary-card">
+            <h2>Project Overview</h2>
+            <p>
+              This project studies how security teams turn raw cloud and
+              endpoint logs into useful detections. It emphasizes data source
+              quality, ATT&amp;CK-style behavior mapping, alert fidelity, triage
+              notes, and measurable false-positive reduction.
+            </p>
+          </div>
+          <aside class="summary-card">
+            <h2>Technologies</h2>
+            <ul>
+              <li>Splunk Enterprise Security</li>
+              <li>ELK Stack and Azure Sentinel concepts</li>
+              <li>AWS CloudTrail and VPC Flow Logs</li>
+              <li>WAF, EDR, DNS, and endpoint telemetry</li>
+              <li>MITRE ATT&amp;CK mapping</li>
+            </ul>
+          </aside>
+        </section>
+        <div class="case-study">
+          <h2>Detection workflow</h2>
+          <p>
+            Each detection starts with a behavior, required telemetry, query
+            logic, expected false positives, enrichment fields, and analyst
+            action. The lab favors clear triage paths over noisy rule volume.
+          </p>
+          <h2>Cloud log coverage</h2>
+          <p>
+            The lab prioritizes CloudTrail, VPC Flow Logs, WAF logs, GuardDuty
+            findings, identity events, and endpoint alerts because cloud attacks
+            often cross identity, network, and workload boundaries.
+          </p>
+          <h2>Study notes</h2>
+          <p>
+            This project supports security engineering, SOC mentoring, alert
+            triage, incident response, and practical security analytics.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer><p>&copy; 2026 James Fiyci.</p></footer>
+  </body>
+</html>
