@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detection Engineering with Cloud Logs and Splunk | James Fiyci</title>
+    <meta
+      name="description"
+      content="James Fiyci study note on detection engineering with AWS logs, Splunk, WAF, EDR, DNS, VPC Flow Logs, MITRE ATT&CK mapping, and alert triage."
+    />
+    <link rel="canonical" href="https://ibrahimfiyci.github.io/articles/detection-engineering-cloud-logs-splunk.html" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Detection Engineering with Cloud Logs and Splunk | James Fiyci" />
+    <meta property="og:url" content="https://ibrahimfiyci.github.io/articles/detection-engineering-cloud-logs-splunk.html" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <a class="brand" href="/">James Fiyci</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Links</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <header class="article-hero">
+          <p class="kicker">Detection Engineering Blog</p>
+          <h1>Detection Engineering with Cloud Logs and Splunk</h1>
+          <p class="article-meta">By James Fiyci | Updated July 13, 2026</p>
+        </header>
+        <div class="article-body">
+          <p>
+            Good detection engineering is a loop: understand behavior, confirm
+            telemetry, write logic, test false positives, document triage, and
+            improve the control after incidents and reviews.
+          </p>
+          <h2>Start with behavior</h2>
+          <p>
+            A useful detection begins with a security behavior, not a tool
+            feature. Examples include suspicious identity changes, unusual API
+            activity, abnormal network paths, endpoint execution, or WAF events
+            tied to application risk.
+          </p>
+          <h2>Know the data sources</h2>
+          <p>
+            AWS CloudTrail, VPC Flow Logs, WAF logs, GuardDuty findings, EDR
+            alerts, DNS telemetry, and authentication logs each answer different
+            questions. Detections become stronger when they combine sources
+            without creating unreadable logic.
+          </p>
+          <h2>Make triage clear</h2>
+          <p>
+            Every alert should explain why it fired, what evidence matters,
+            what false positives are expected, and what an analyst should check
+            next. That is how SIEM content becomes usable security work.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer><p>&copy; 2026 James Fiyci.</p></footer>
+  </body>
+</html>
