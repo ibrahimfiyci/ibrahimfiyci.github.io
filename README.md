@@ -1,6 +1,6 @@
-# James Fiyci AI Security Portfolio
+# James Fiyci Security Work Site
 
-Static GitHub Pages version of the personal AI security portfolio.
+Static GitHub Pages site for James Fiyci security studies, including security architecture, AWS cloud security, AI security, detection engineering, incident response, governance, and defensive project notes.
 
 ## Publish
 
