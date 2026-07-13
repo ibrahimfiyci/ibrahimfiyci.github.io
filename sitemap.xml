@@ -2,7 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ibrahimfiyci.github.io/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/projects/aws-zero-trust-security-architecture.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/projects/cloud-security-detection-engineering-lab.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/projects/cloud-incident-response-automation-playbooks.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/projects/security-governance-control-mapping-workbook.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/projects/devsecops-iac-policy-automation-lab.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/projects/cloud-data-protection-kms-backup-resilience-lab.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/articles/security-architect-reading-map-cloud-ai.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/articles/aws-zero-trust-cloud-security-study-guide.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/articles/detection-engineering-cloud-logs-splunk.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/articles/cloud-incident-response-playbook-notes.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/articles/security-architecture-governance-control-mapping.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/articles/devsecops-iac-security-guardrails.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ibrahimfiyci.github.io/articles/ai-security-cloud-security-overlap.html</loc>
+    <lastmod>2026-07-13</lastmod>
   </url>
   <url>
     <loc>https://ibrahimfiyci.github.io/articles/ai-security-basics.html</loc>
